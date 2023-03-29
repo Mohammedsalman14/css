@@ -5,30 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-    h1{
-        font-family:'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-    span{
-        font-weight: bold;
-        background-attachment: fixed;
-    }
-    p{
-        background: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg") no-repeat ;
-    }
-   </style>
-   <link rel="stylesheet" href="">
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        span {
+            font-weight: bold;
+            background-attachment: fixed;
+        }
+
+        p {
+            background: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg") no-repeat;
+        }
+
+        /* background-origin  */
+            /*
+            content-box
+            padding-box
+            border-box
+            */
+        div {
+            background-color: aliceblue;
+            width: 800px;
+            height: 600px;
+            padding: 25px;
+            border: 20px dashed black;
+            background: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg") no-repeat;
+            background-origin: content-box;
+            color: red;
+        }
+        /* background-Clip */
+        #clip{
+            width: 800px;
+            height: 400px;
+            background: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg") no-repeat;
+            background-size: cover;
+            font-size: 100px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: transparent;
+            background-clip:text;
+            -webkit-background-clip: text;
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
     <h1>CSS Font Properties</h1>
     <p style="color: orange;text-align: justify;"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aperiam, ut voluptate quibusdam saepe eius odio quis nulla nihil beatae voluptates dolor repellendus enim,
-        labore, eaque sint. Sequi labore facere inventore, excepturi ad eaque temporibus eius mollitia harum
-        accusantium. Quia distinctio dicta voluptatem ut earum? Veniam officia laborum in debitis repellendus tempore
-        molestias quae quisquam nulla praesentium est ipsum accusantium nihil impedit officiis quod suscipit vel
-        architecto cum deserunt necessitatibus </span> mollitia, et, odio labore. Rerum, minus at, iure debitis omnis aut totam
+            Aperiam, ut voluptate quibusdam saepe eius odio quis nulla nihil beatae voluptates dolor repellendus enim,
+            labore, eaque sint. Sequi labore facere inventore, excepturi ad eaque temporibus eius mollitia harum
+            accusantium. Quia distinctio dicta voluptatem ut earum? Veniam officia laborum in debitis repellendus
+            tempore
+            molestias quae quisquam nulla praesentium est ipsum accusantium nihil impedit officiis quod suscipit vel
+            architecto cum deserunt necessitatibus </span> mollitia, et, odio labore. Rerum, minus at, iure debitis
+        omnis aut totam
         fugit beatae accusamus ab consequuntur, earum dolore blanditiis ad itaque provident excepturi asperiores quaerat
         aliquid ipsam quam? Cum modi cumque debitis animi deleniti, dolores asperiores totam, quam possimus natus earum
         saepe consequatur enim accusantium repudiandae. Iste asperiores incidunt assumenda necessitatibus, dicta placeat
@@ -63,6 +98,14 @@
         repellendus, tempore pariatur porro! Doloremque consequatur perspiciatis, exercitationem perferendis cum esse
         soluta velit unde quit!
     </div>
+    <div id="clip">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque dolores optio quibusdam incidunt in
+        repellendus, tempore pariatur porro! Doloremque consequatur perspiciatis, exercitationem perferendis cum esse
+        soluta velit unde quit!
+    </div>
+    
+
+
 
 
 
